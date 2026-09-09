@@ -14,16 +14,16 @@
 
 name: "ML-CI-Linux-CMake"
 on:
-  push:
-    branches:
-      - main
-    tags:
-      - v*.*.*
-  pull_request:
-    branches:
-    - main
-  schedule:
-    - cron: "0 10 * * *"  # Run at 2am PST (10am UTC) every day to refresh the cache.
+  # push:
+  #   branches:
+  #     - main
+  #   tags:
+  #     - v*.*.*
+  # pull_request:
+  #   branches:
+  #   - main
+  # schedule:
+  #   - cron: "0 10 * * *"  # Run at 2am PST (10am UTC) every day to refresh the cache.
   workflow_dispatch:  # Manual trigger
     inputs:
       REFRESH_CACHE:
