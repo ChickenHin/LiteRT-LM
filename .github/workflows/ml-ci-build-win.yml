@@ -14,14 +14,14 @@
 
 name: "ML-CI-Win"
 on:
-  push:
-    tags:
-    - v*.*.*
-  pull_request:
-    branches:
-    - main
-  schedule:
-    - cron: "0 10 * * *"  # Run at 2am PST (10am UTC) every day to refresh the cache.
+  # push:
+  #   tags:
+  #   - v*.*.*
+  # pull_request:
+  #   branches:
+  #   - main
+  # schedule:
+  #   - cron: "0 10 * * *"  # Run at 2am PST (10am UTC) every day to refresh the cache.
   workflow_dispatch:  # Manual trigger
     inputs:
       REFRESH_CACHE:
